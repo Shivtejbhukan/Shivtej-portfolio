@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shivtej Bhukan | Java Full Stack Developer portfolio featuring modern UI, projects, skills, certificates, contact form, and visitor counter." />
+  <meta name="keywords" content="Java Full Stack Developer, Java, Spring Boot, JSP, Servlets, MySQL, Portfolio, Resume, Web Developer" />
+  <meta name="author" content="Shivtej Bhukan" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Shivtej Bhukan | Java Full Stack Developer" />
+  <meta property="og:description" content="Premium developer portfolio with projects, skills, certificates, contact form, and modern UI." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:image" content="images/profile.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shivtej Bhukan | Java Full Stack Developer" />
+  <meta name="twitter:description" content="Premium developer portfolio with projects, skills, certificates, contact form, and modern UI." />
+  <meta name="twitter:image" content="images/profile.png" />
+  <link rel="canonical" href="https://yourdomain.com/" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <link href="https://unpkg.com/github-calendar/dist/github-calendar.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Shivtej Bhukan | Java Full Stack Developer</title>
+</head>
+<body>
+  <div id="preloader" class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <div id="particles-js" class="particles-bg"></div>
+
+  <header class="navbar navbar-expand-lg navbar-dark fixed-top py-3 shadow-sm bg-transparent">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">SB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tech-stack">Tech Stack</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#coding-profiles">Coding Profiles</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="btn btn-outline-light btn-sm theme-toggle" type="button" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section min-vh-100 d-flex align-items-center position-relative overflow-hidden">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-white" data-aos="fade-right">
+            <p class="eyebrow">Hello, I am</p>
+            <h1>Shivtej Bhukan</h1>
+            <p class="subtitle">Java Full Stack Developer</p>
+            <div class="typewriter mb-4">
+              <span id="typed-text"></span>
+            </div>
+            <div class="hero-buttons d-flex flex-wrap gap-3">
+              <a class="btn btn-primary btn-lg" href="resume/resume.pdf" download>Download Resume</a>
+              <a class="btn btn-outline-light btn-lg" href="#projects">View Projects</a>
+              <a class="btn btn-soft btn-lg" href="#contact">Hire Me</a>
+              <a class="btn btn-link text-white" href="https://github.com/Shivtejbhukan" target="_blank" rel="noreferrer">View GitHub</a>
+              <a class="btn btn-link text-white" href="https://www.linkedin.com/in/shivtej-bhukan-8668232b1" target="_blank" rel="noreferrer">View LinkedIn</a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="hero-card position-relative mx-auto">
+              <div class="hero-shape hero-shape-1"></div>
+              <div class="hero-shape hero-shape-2"></div>
+              <img class="img-fluid rounded-circle hero-photo" src="images/profile.png" alt="Profile photo of Shivtej Bhukan" />
+              <div class="hero-note bg-glass p-4 shadow-lg">
+                <h5>Java Full Stack Developer</h5>
+                <p>Focused on modern, scalable web applications with Java, Spring Boot, JSP, and MySQL.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section bg-dark-alt py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <span class="section-label">About Me</span>
+          <h2>Modern Full Stack Portfolio</h2>
+          <p>Passionate about building maintainable solutions, clean code, and polished digital experiences.</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="glass-card p-4 h-100 shadow-sm">
+              <h3>About Me</h3>
+              <p>I am a passionate Java Full Stack Developer who enjoys building modern, scalable web applications using Java, Spring Boot, JSP, Servlets, JavaScript, HTML, CSS and MySQL. I love solving real-world problems with clean and maintainable code.</p>
+              <div class="personal-info mt-4">
+                <div class="info-row d-flex justify-content-between"><span>Name</span><strong>Shivtej Bhukan</strong></div>
+                <div class="info-row d-flex justify-content-between"><span>Email</span><strong>shivtejbhukan955@gmail.com</strong></div>
+                <div class="info-row d-flex justify-content-between"><span>Phone</span><strong>+91-8805434458</strong></div>
+                <div class="info-row d-flex justify-content-between"><span>Location</span><strong>Pune</strong></div>
+                <div class="info-row d-flex justify-content-between"><span>Degree</span><strong>Bachelor of Computer Applications</strong></div>
+                <div class="info-row d-flex justify-content-between"><span>CGPA</span><strong>8.9</strong></div>
+              </div>
+              <div class="mt-4 d-flex flex-wrap gap-3">
+                <a class="btn btn-primary" href="resume/resume.pdf" download>Resume</a>
+                <a class="btn btn-outline-light" href="https://github.com/placeholder" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="btn btn-outline-light" href="https://linkedin.com/in/placeholder" target="_blank" rel="noreferrer">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 text-white" data-aos="fade-up" data-aos-delay="200">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="glass-card p-4 h-100 shadow-sm">
+                  <h4>Mission</h4>
+                  <p>Deliver premium web experiences using Java and modern frontend libraries with a strong attention to performance, accessibility, and SEO.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="glass-card p-4 h-100 shadow-sm">
+                  <h4>Strengths</h4>
+                  <p>Problem-solving, collaboration, quick learning, polished UI design, and enterprise-grade backend development.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="glass-card p-4 h-100 shadow-sm">
+                  <h4>Approach</h4>
+                  <p>Use clean architecture, responsive layouts, fast assets, and reusable components to build a compelling portfolio.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="glass-card p-4 h-100 shadow-sm">
+                  <h4>Tools</h4>
+                  <p>Bootstrap, JavaScript, Git, GitHub, VS Code, Eclipse, Android Studio and MySQL.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <span class="section-label">Services</span>
+          <h2>What I Offer</h2>
+          <p>High-quality services that deliver polished interfaces, strong backend systems, and responsive applications.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card p-4 h-100 shadow-sm">
+              <i class="bi bi-code-slash service-icon"></i>
+              <h5>Java Development</h5>
+              <p>Enterprise-grade Java applications using Spring Boot, JSP, Servlets, and REST APIs.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="service-card p-4 h-100 shadow-sm">
+              <i class="bi bi-laptop service-icon"></i>
+              <h5>Frontend Development</h5>
+              <p>Responsive websites with Bootstrap, modern HTML5 layouts, animation, and accessibility.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card p-4 h-100 shadow-sm">
+              <i class="bi bi-hdd-network service-icon"></i>
+              <h5>Backend Development</h5>
+              <p>REST API design, JDBC integration, database modelling, and server-side business logic.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+            <div class="service-card p-4 h-100 shadow-sm">
+              <i class="bi bi-phone service-icon"></i>
+              <h5>Responsive Websites</h5>
+              <p>Mobile-first, accessible, performant pages that look great on every device.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card p-4 h-100 shadow-sm">
+              <i class="bi bi-api service-icon"></i>
+              <h5>REST API Development</h5>
+              <p>Solid API endpoints, JSON communication, and secure backend services.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="350">
+            <div class="service-card p-4 h-100 shadow-sm">
+              <i class="bi bi-database service-icon"></i>
+              <h5>Database Design</h5>
+              <p>Relational data modelling with MySQL and efficient query design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section bg-dark-alt py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <span class="section-label">Skills</span>
+          <h2>Technical Skills</h2>
+          <p>Strong skill set across frontend, backend, database and developer tools.</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="skill-card p-4 shadow-sm bg-glass">
+              <h4>Frontend</h4>
+              <div class="skill-item"><span>HTML</span><div class="progress"><div class="progress-bar" style="width: 95%"></div></div></div>
+              <div class="skill-item"><span>CSS</span><div class="progress"><div class="progress-bar" style="width: 92%"></div></div></div>
+              <div class="skill-item"><span>Bootstrap</span><div class="progress"><div class="progress-bar" style="width: 90%"></div></div></div>
+              <div class="skill-item"><span>JavaScript</span><div class="progress"><div class="progress-bar" style="width: 88%"></div></div></div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="skill-card p-4 shadow-sm bg-glass">
+              <h4>Backend</h4>
+              <div class="skill-item"><span>Java</span><div class="progress"><div class="progress-bar" style="width: 92%"></div></div></div>
+              <div class="skill-item"><span>Spring Boot</span><div class="progress"><div class="progress-bar" style="width: 88%"></div></div></div>
+              <div class="skill-item"><span>JSP</span><div class="progress"><div class="progress-bar" style="width: 85%"></div></div></div>
+              <div class="skill-item"><span>Servlet</span><div class="progress"><div class="progress-bar" style="width: 85%"></div></div></div>
+              <div class="skill-item"><span>JDBC / REST API</span><div class="progress"><div class="progress-bar" style="width: 87%"></div></div></div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="skill-card p-4 shadow-sm bg-glass">
+              <h4>Database</h4>
+              <div class="skill-item"><span>MySQL</span><div class="progress"><div class="progress-bar" style="width: 90%"></div></div></div>
+              <div class="skill-item"><span>Git</span><div class="progress"><div class="progress-bar" style="width: 88%"></div></div></div>
+              <div class="skill-item"><span>GitHub</span><div class="progress"><div class="progress-bar" style="width: 92%"></div></div></div>
+              <div class="skill-item"><span>VS Code</span><div class="progress"><div class="progress-bar" style="width: 90%"></div></div></div>
+              <div class="skill-item"><span>Eclipse</span><div class="progress"><div class="progress-bar" style="width: 82%"></div></div></div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="skill-card p-4 shadow-sm bg-glass">
+              <h4>Tools</h4>
+              <div class="skill-item"><span>Android Studio</span><div class="progress"><div class="progress-bar" style="width: 78%"></div></div></div>
+              <div class="skill-item"><span>Responsive Design</span><div class="progress"><div class="progress-bar" style="width: 94%"></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech-stack" class="section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <span class="section-label">Tech Stack</span>
+          <h2>Tools & Technologies</h2>
+          <p>A colorful stack of technologies I use to build robust web products.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-delay="100"><div class="tech-card"><span class="tech-icon">HTML</span></div></div>
+          <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-delay="150"><div class="tech-card"><span class="tech-icon">CSS</span></div></div>
+          <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-delay="200"><div class="tech-card"><span class="tech-icon">Bootstrap</span></div></div>
+          <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-delay="250"><div class="tech-card"><span class="tech-icon">JavaScript</span></div></div>
+          <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-delay="300"><div class="tech-card"><span class="tech-icon">Java</span></div></div>
+          <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-delay="350"><div class="tech-card"><span class="tech-icon">Spring Boot</span></div></div>
+          <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-delay="400"><div class="tech-card"><span class="tech-icon">MySQL</span></div></div>
+          <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-delay="450"><div class="tech-card"><span class="tech-icon">Git</span></div></div>
+          <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-delay="500"><div class="tech-card"><span class="tech-icon">GitHub</span></div></div>
+          <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-delay="550"><div class="tech-card"><span class="tech-icon">VS Code</span></div></div>
+          <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-delay="600"><div class="tech-card"><span class="tech-icon">Apache Tomcat</span></div></div>
+          <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-delay="650"><div class="tech-card"><span class="tech-icon">Responsive</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section bg-dark-alt py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <span class="section-label">Education</span>
+          <h2>Academic Timeline</h2>
+          <p>Structured learning journey with strong academic outcomes.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <span class="timeline-year">2023 - 2026</span>
+            <div class="timeline-content glass-card p-4 shadow-sm">
+              <h5>Bachelor of Computer Applications</h5>
+              <p>S.M. Joshi College, Savitribai Phule Pune University</p>
+              <span class="badge bg-primary">CGPA 8.9</span>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <span class="timeline-year">2022</span>
+            <div class="timeline-content glass-card p-4 shadow-sm">
+              <h5>HSC</h5>
+              <p>74.83%</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+            <span class="timeline-year">2020</span>
+            <div class="timeline-content glass-card p-4 shadow-sm">
+              <h5>SSC</h5>
+              <p>91.20%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-4" data-aos="fade-up">
+          <span class="section-label">Projects</span>
+          <h2>Recent Work</h2>
+          <p>Beautiful cards for current portfolio projects and upcoming builds.</p>
+        </div>
+        <div class="project-filter mb-4" data-aos="fade-up" data-aos-delay="100">
+          <input id="projectSearch" type="search" class="form-control form-control-lg" placeholder="Search projects by name or technology" aria-label="Search projects" />
+        </div>
+        <div class="row g-4" id="projectGrid">
+          <div class="col-md-6 col-lg-4 project-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="card shadow-sm project-box">
+              <img src="images/projects/project1.png" class="card-img-top" alt="AI Mock Interview System screenshot" loading="lazy" />
+              <div class="card-body">
+                <h5 class="card-title">AI Mock Interview System</h5>
+                <p class="card-text">A web application that helps students prepare for interviews using AI.</p>
+                <div class="project-tags mb-3"><span>Java</span><span>JSP</span><span>Servlet</span><span>MySQL</span></div>
+                <div class="d-flex flex-wrap gap-2">
+                  <button class="btn btn-outline-primary btn-sm project-detail-btn" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="AI Mock Interview System" data-description="A web application that helps students prepare for interviews using AI." data-tech="Java, JSP, Servlet, HTML, CSS, JavaScript, MySQL, Apache Tomcat" data-image="images/projects/project1.png">View Details</button>
+                  <a class="btn btn-primary btn-sm" href="https://github.com/placeholder" target="_blank" rel="noreferrer">GitHub</a>
+                  <a class="btn btn-soft btn-sm" href="https://placeholder-live-demo.com" target="_blank" rel="noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card shadow-sm project-box">
+              <img src="images/projects/project2.png" class="card-img-top" alt="VISTRAN Teacher Training Platform screenshot" loading="lazy" />
+              <div class="card-body">
+                <h5 class="card-title">VISTRAN</h5>
+                <p class="card-text">Teacher training platform built for smooth learning and evaluation.</p>
+                <div class="project-tags mb-3"><span>Java</span><span>Servlet</span><span>JSP</span><span>MySQL</span></div>
+                <div class="d-flex flex-wrap gap-2">
+                  <button class="btn btn-outline-primary btn-sm project-detail-btn" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="VISTRAN" data-description="Teacher training platform built for smooth learning and evaluation." data-tech="Java, Servlet, JSP, HTML, CSS, JavaScript, MySQL, Apache Tomcat" data-image="images/projects/project2.png">View Details</button>
+                  <a class="btn btn-primary btn-sm" href="https://github.com/placeholder" target="_blank" rel="noreferrer">GitHub</a>
+                  <a class="btn btn-soft btn-sm" href="https://placeholder-live-demo.com" target="_blank" rel="noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 project-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="card shadow-sm project-box">
+              <img src="images/projects/project3.png" class="card-img-top" alt="Upcoming project placeholder" loading="lazy" />
+              <div class="card-body">
+                <h5 class="card-title">Upcoming Project</h5>
+                <p class="card-text">Coming soon: a next level project with more features and polish.</p>
+                <div class="project-tags mb-3"><span>Coming Soon</span></div>
+                <div class="d-flex flex-wrap gap-2">
+                  <button class="btn btn-outline-primary btn-sm project-detail-btn" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Upcoming Project" data-description="Coming soon: a next level project with more features and polish." data-tech="TBD" data-image="images/projects/project3.png">View Details</button>
+                  <button class="btn btn-primary btn-sm disabled">GitHub</button>
+                  <button class="btn btn-soft btn-sm disabled">Live Demo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content bg-dark text-white border-0 shadow-lg">
+            <div class="modal-header border-0">
+              <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row gy-4">
+                <div class="col-lg-6">
+                  <img id="modalProjectImage" src="images/projects/project1.png" class="img-fluid rounded-3" alt="Project screenshot" />
+                </div>
+                <div class="col-lg-6">
+                  <h3 id="modalProjectTitle"></h3>
+                  <p id="modalProjectDescription"></p>
+                  <p><strong>Technologies:</strong> <span id="modalProjectTech"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="section bg-dark-alt py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <span class="section-label">Certificates</span>
+          <h2>Professional Certifications</h2>
+          <p>Certificates and achievements from top training platforms and hackathons.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="100">
+            <div class="cert-card p-4 rounded-4 shadow-sm bg-glass">
+              <div class="cert-icon"><i class="bi bi-award-fill"></i></div>
+              <h5>Google</h5>
+              <p>Certification placeholder for professional development.</p>
+              <a class="btn btn-outline-light btn-sm" href="#" target="_blank">View Certificate</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="150">
+            <div class="cert-card p-4 rounded-4 shadow-sm bg-glass">
+              <div class="cert-icon"><i class="bi bi-mortarboard-fill"></i></div>
+              <h5>Oracle</h5>
+              <p>Certificate placeholder for Java and backend excellence.</p>
+              <a class="btn btn-outline-light btn-sm" href="#" target="_blank">View Certificate</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="200">
+            <div class="cert-card p-4 rounded-4 shadow-sm bg-glass">
+              <div class="cert-icon"><i class="bi bi-trophy-fill"></i></div>
+              <h5>Hackathon</h5>
+              <p>Competition and achievement placeholder for innovation.</p>
+              <a class="btn btn-outline-light btn-sm" href="#" target="_blank">View Certificate</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="250">
+            <div class="cert-card p-4 rounded-4 shadow-sm bg-glass">
+              <div class="cert-icon"><i class="bi bi-laptop-fill"></i></div>
+              <h5>NPTEL</h5>
+              <p>Course certificate placeholder for advanced learning.</p>
+              <a class="btn btn-outline-light btn-sm" href="#" target="_blank">View Certificate</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="300">
+            <div class="cert-card p-4 rounded-4 shadow-sm bg-glass">
+              <div class="cert-icon"><i class="bi bi-camera-reels-fill"></i></div>
+              <h5>Udemy</h5>
+              <p>Online course certificate placeholder for modern development.</p>
+              <a class="btn btn-outline-light btn-sm" href="#" target="_blank">View Certificate</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="350">
+            <div class="cert-card p-4 rounded-4 shadow-sm bg-glass">
+              <div class="cert-icon"><i class="bi bi-journal-bookmark-fill"></i></div>
+              <h5>Coursera</h5>
+              <p>Certification placeholder for professional growth.</p>
+              <a class="btn btn-outline-light btn-sm" href="#" target="_blank">View Certificate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="coding-profiles" class="section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <span class="section-label">Coding Profiles</span>
+          <h2>Track Record Online</h2>
+          <p>Profiles for coding practice and competitive problem solving.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="profile-card p-4 shadow-sm bg-glass text-center">
+              <i class="bi bi-github profile-icon"></i>
+              <h5>GitHub</h5>
+              <p>Contributions, project repositories, and open source work.</p>
+              <a class="btn btn-outline-light btn-sm" href="https://github.com/placeholder" target="_blank" rel="noreferrer">Visit Profile</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="profile-card p-4 shadow-sm bg-glass text-center">
+              <i class="bi bi-kanban-fill profile-icon"></i>
+              <h5>LeetCode</h5>
+              <p>Problem solving and competitive coding practice profile.</p>
+              <a class="btn btn-outline-light btn-sm" href="https://leetcode.com/placeholder" target="_blank" rel="noreferrer">Visit Profile</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="profile-card p-4 shadow-sm bg-glass text-center">
+              <i class="bi bi-mortarboard-fill profile-icon"></i>
+              <h5>HackerRank</h5>
+              <p>Coding challenges and algorithm practice scorecard.</p>
+              <a class="btn btn-outline-light btn-sm" href="https://www.hackerrank.com/placeholder" target="_blank" rel="noreferrer">Visit Profile</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="250">
+            <div class="profile-card p-4 shadow-sm bg-glass text-center">
+              <i class="bi bi-controller profile-icon"></i>
+              <h5>CodeChef</h5>
+              <p>Competitive programming profile with ongoing practice.</p>
+              <a class="btn btn-outline-light btn-sm" href="https://www.codechef.com/users/placeholder" target="_blank" rel="noreferrer">Visit Profile</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="profile-card p-4 shadow-sm bg-glass text-center">
+              <i class="bi bi-lightning-charge-fill profile-icon"></i>
+              <h5>Codeforces</h5>
+              <p>Competitive coding and contest ranking profile.</p>
+              <a class="btn btn-outline-light btn-sm" href="https://codeforces.com/profile/placeholder" target="_blank" rel="noreferrer">Visit Profile</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="350">
+            <div class="profile-card p-4 shadow-sm bg-glass text-center">
+              <i class="bi bi-bookmark-fill profile-icon"></i>
+              <h5>GeeksforGeeks</h5>
+              <p>Tutorial practice, programming articles, and coding preparation.</p>
+              <a class="btn btn-outline-light btn-sm" href="https://auth.geeksforgeeks.org/user/placeholder" target="_blank" rel="noreferrer">Visit Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="github-calendar" class="section bg-dark-alt py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <span class="section-label">GitHub Contributions</span>
+          <h2>Contribution Calendar</h2>
+          <p>GitHub activity calendar for a public profile placeholder.</p>
+        </div>
+        <div class="calendar-wrapper glass-card p-4 shadow-sm" data-aos="fade-up" data-aos-delay="150">
+          <div id="github-calendar-root" class="github-calendar mx-auto"></div>
+          <p class="text-center mt-3 text-muted">Replace the username in <code>js/script.js</code> with <strong>Shivtejbhukan</strong> to display real data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <span class="section-label">Achievements</span>
+          <h2>Growth Metrics</h2>
+          <p>Count-up stats for projects, certificates, skills, and happy clients.</p>
+        </div>
+        <div class="row g-4 text-center">
+          <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="achievement-card p-4 shadow-sm bg-glass">
+              <h3 class="count" data-target="12">0</h3>
+              <p>Projects</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="150">
+            <div class="achievement-card p-4 shadow-sm bg-glass">
+              <h3 class="count" data-target="8">0</h3>
+              <p>Certificates</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="achievement-card p-4 shadow-sm bg-glass">
+              <h3 class="count" data-target="16">0</h3>
+              <p>Skills</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="250">
+            <div class="achievement-card p-4 shadow-sm bg-glass">
+              <h3 class="count" data-target="20">0</h3>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="visitor-counter" class="section bg-dark-alt py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <span class="section-label">Visitor Counter</span>
+          <h2>Live Visitor Metrics</h2>
+          <p>Real-time visitor analytics powered by CountAPI.</p>
+        </div>
+        <div class="row g-4 justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-sm-6 col-md-4">
+            <div class="achievement-card p-4 shadow-sm bg-glass">
+              <h3 id="visitorTotal">0</h3>
+              <p>Total Visitors</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="achievement-card p-4 shadow-sm bg-glass">
+              <h3 id="visitorToday">0</h3>
+              <p>Visitors Today</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section bg-dark-alt py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <span class="section-label">Testimonials</span>
+          <h2>What People Say</h2>
+          <p>Trusted feedback from colleagues and project stakeholders.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-card p-4 shadow-sm bg-glass">
+              <p>Shivtej delivered a polished application with clear communication and strong technical skills.</p>
+              <h6>Project Mentor</h6>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="testimonial-card p-4 shadow-sm bg-glass">
+              <p>Excellent Java backend expertise and thoughtful frontend design throughout the project.</p>
+              <h6>Client Partner</h6>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-card p-4 shadow-sm bg-glass">
+              <p>Responsive developer with great problem-solving ability and a professional attitude.</p>
+              <h6>Team Lead</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <span class="section-label">FAQ</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Answers to common questions about projects, skills, and work style.</p>
+        </div>
+        <div class="accordion" id="faqAccordion" data-aos="fade-up" data-aos-delay="100">
+          <div class="accordion-item bg-dark-alt border-0 shadow-sm mb-3">
+            <h2 class="accordion-header" id="faqOneHeader">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">What technologies do you use?</button>
+            </h2>
+            <div id="faqOne" class="accordion-collapse collapse" aria-labelledby="faqOneHeader" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">I build with Java, Spring Boot, JSP, Servlets, JavaScript, Bootstrap, HTML, CSS, and MySQL.</div>
+            </div>
+          </div>
+          <div class="accordion-item bg-dark-alt border-0 shadow-sm mb-3">
+            <h2 class="accordion-header" id="faqTwoHeader">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">Can I request a custom project?</button>
+            </h2>
+            <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqTwoHeader" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes. Use the contact form to share requirements and I will respond to discuss the next steps.</div>
+            </div>
+          </div>
+          <div class="accordion-item bg-dark-alt border-0 shadow-sm">
+            <h2 class="accordion-header" id="faqThreeHeader">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">Do you provide resume downloads?</button>
+            </h2>
+            <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faqThreeHeader" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes, visitors can download the resume from the resume section or via the hero call-to-action.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section bg-dark-alt py-5">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7" data-aos="fade-right">
+            <div class="resume-card p-5 shadow-lg bg-glass">
+              <span class="section-label">Resume</span>
+              <h2>Interested in my work?</h2>
+              <p>Download the resume to review experience, education, projects, and certifications.</p>
+              <div class="d-flex flex-wrap gap-3 mt-4">
+                <a class="btn btn-primary btn-lg" href="resume/resume.pdf" download>Download Resume</a>
+                <a class="btn btn-outline-light btn-lg" href="resume/resume.pdf" target="_blank">View Resume</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-left">
+            <div class="resume-preview p-4 shadow-sm bg-glass text-center">
+              <i class="bi bi-file-earmark-person-fill display-4 text-primary"></i>
+              <h4 class="mt-3">Resume Package</h4>
+              <p class="mb-0">Download the complete resume from the folder <code>resume/resume.pdf</code>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <span class="section-label">Contact</span>
+          <h2>Let's Build Something</h2>
+          <p>Reach out with a message and I will get back to you soon.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-7" data-aos="fade-right">
+            <div class="glass-card p-4 shadow-sm">
+              <form id="contactForm" class="contact-form">
+                <div class="row g-3">
+                  <div class="col-md-6"><input type="text" id="contactName" class="form-control" placeholder="Your name" required /></div>
+                  <div class="col-md-6"><input type="email" id="contactEmail" class="form-control" placeholder="Your email address" required /></div>
+                  <div class="col-12"><input type="text" id="contactSubject" class="form-control" placeholder="Subject (e.g. Web project, internship, collaboration)" required /></div>
+                  <div class="col-12"><textarea id="contactMessage" rows="5" class="form-control" placeholder="Tell me about your project or question" required></textarea></div>
+                  <div class="col-12"><button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-left">
+            <div class="contact-cards row g-3">
+              <div class="col-12"><div class="contact-card p-4 shadow-sm bg-glass"><i class="bi bi-telephone-fill contact-icon"></i><h6>Phone</h6><p>+91-8805434458</p></div></div>
+              <div class="col-12"><div class="contact-card p-4 shadow-sm bg-glass"><i class="bi bi-envelope-fill contact-icon"></i><h6>Email</h6><p>shivtejbhukan955@gmail.com</p></div></div>
+              <div class="col-12"><div class="contact-card p-4 shadow-sm bg-glass"><i class="bi bi-geo-alt-fill contact-icon"></i><h6>Location</h6><p>Pune, India</p></div></div>
+              <div class="col-12"><div class="contact-card p-4 shadow-sm bg-glass"><i class="bi bi-linkedin contact-icon"></i><h6>LinkedIn</h6><p><a class="link-light" href="https://www.linkedin.com/in/shivtej-bhukan-8668232b1" target="_blank" rel="noreferrer">Click to view Linkedin</a></p></div></div>
+              <div class="col-12"><div class="contact-card p-4 shadow-sm bg-glass"><i class="bi bi-github contact-icon"></i><h6>GitHub</h6><p><a class="link-light" href="https://github.com/Shivtejbhukan" target="_blank" rel="noreferrer">Click to view Github</a></p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" class="back-to-top btn btn-primary shadow-lg" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  <a class="whatsapp-btn btn btn-success shadow-lg" href="https://wa.me/918805434458?text=Hello%20Shivtej,%20I%20visited%20your%20portfolio." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+  <footer class="footer py-4 text-center text-white bg-dark-alt">
+    <div class="container">
+      <div class="footer-links mb-3">
+        <a href="https://github.com/Shivtejbhukan" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/shivtej-bhukan-8668232b1" target="_blank" rel="noreferrer"><i class="bi bi-linkedin"></i></a>
+        <a href="https://instagram.com/placeholder" target="_blank" rel="noreferrer"><i class="bi bi-instagram"></i></a>
+        <a href="https://twitter.com/placeholder" target="_blank" rel="noreferrer"><i class="bi bi-twitter"></i></a>
+        <a href="mailto:shivtejbhukan955@gmail.com"><i class="bi bi-envelope"></i></a>
+      </div>
+      <p class="mb-0">Designed and Developed by <strong>Shivtej Bhukan</strong>.</p>
+      <p class="text-muted small mb-0">&copy; 2026 All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastContainer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

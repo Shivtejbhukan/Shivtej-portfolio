@@ -1,0 +1,21 @@
+{
+  "name": "Shivtej Bhukan Portfolio",
+  "short_name": "Shivtej Portfolio",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#050816",
+  "theme_color": "#5b8def",
+  "description": "Premium Java Full Stack Developer portfolio built with HTML, CSS, Bootstrap, and JavaScript.",
+  "icons": [
+    {
+      "src": "images/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
