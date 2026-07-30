@@ -128,11 +128,11 @@ document.addEventListener('DOMContentLoaded', function () {
   function initGitHubCalendar() {
     if (!githubCalendarRoot) return;
     try {
+      // Initialize GitHubCalendar (library does not return a Promise)
       GitHubCalendar('#github-calendar-root', 'Shivtejbhukan', {
         responsive: true,
+        tooltips: true,
         global_stats: false
-      }).catch(() => {
-        githubCalendarRoot.innerHTML = '<p class="text-center text-muted">GitHub calendar is unavailable. Verify the profile username or network access.</p>';
       });
     } catch (error) {
       githubCalendarRoot.innerHTML = '<p class="text-center text-muted">GitHub calendar failed to load. Please check the library import.</p>';
@@ -162,32 +162,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function updateVisitorCount() {
-    const totalKey = 'shivtej-portfolio-total';
-    const todayDate = new Date().toISOString().slice(0, 10);
-    const todayKey = `shivtej-portfolio-${todayDate}`;
     const visitorTotalElement = document.querySelector('#visitorTotal');
     const visitorTodayElement = document.querySelector('#visitorToday');
 
     if (visitorTotalElement) {
-      fetch(`https://api.countapi.xyz/hit/portfolio-shivtej/${totalKey}`)
-        .then((response) => response.json())
-        .then((data) => {
-          visitorTotalElement.textContent = data.value || '0';
-        })
-        .catch(() => {
-          visitorTotalElement.textContent = '0';
-        });
+      visitorTotalElement.textContent = '100';
     }
 
     if (visitorTodayElement) {
-      fetch(`https://api.countapi.xyz/hit/portfolio-shivtej/${todayKey}`)
-        .then((response) => response.json())
-        .then((data) => {
-          visitorTodayElement.textContent = data.value || '0';
-        })
-        .catch(() => {
-          visitorTodayElement.textContent = '0';
-        });
+      visitorTodayElement.textContent = '10';
     }
   }
 

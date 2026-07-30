@@ -42,6 +42,8 @@ body {
     radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.2), transparent 20%),
     linear-gradient(180deg, #02040a 0%, #08101d 100%);
   font-family: inherit;
+  /* Prevent accidental horizontal scrolling caused by fixed/offscreen elements */
+  overflow-x: hidden;
 }
 
 button, a {
@@ -101,6 +103,7 @@ img {
 .hero-section {
   position: relative;
   padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .hero-section::before {
@@ -186,22 +189,28 @@ h1 {
 
 .hero-note {
   position: absolute;
-  bottom: 0;
+  bottom: -10;
   left: 50%;
-  transform: translateX(-50%) translateY(32%);
+  transform: translateX(-50%);
   width: calc(100% - 2rem);
+  max-width: 360px;
   z-index: 1;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .hero-card {
     max-width: 420px;
   }
 }
 
-@media (max-width: 768px) {
-  .hero-card {
-    max-width: 320px;
+@media (max-width: 991px) {
+  .hero-section {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
   }
 
   .hero-note {
@@ -209,8 +218,53 @@ h1 {
     transform: none;
     width: 100%;
     margin-top: 1.5rem;
-    right: auto;
-    bottom: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 4.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .section-header h2 {
+    font-size: 2.25rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.88);
+    backdrop-filter: blur(18px);
+  }
+
+  .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .back-to-top,
+  .whatsapp-btn {
+    right: 0.75rem;
+    transform: translateZ(0);
   }
 }
 
@@ -444,7 +498,7 @@ h1 {
 .back-to-top,
 .whatsapp-btn {
   position: fixed;
-  right: 1.5rem;
+  right: 1rem;
   z-index: 999;
   width: 48px;
   height: 48px;
@@ -454,12 +508,12 @@ h1 {
 }
 
 .back-to-top {
-  bottom: 1.5rem;
+  bottom: 1.25rem;
   display: none;
 }
 
 .whatsapp-btn {
-  bottom: 6.5rem;
+  bottom: 5.5rem;
 }
 
 .particles-bg {
@@ -525,18 +579,97 @@ h1 {
   }
 }
 
+@media (max-width: 1200px) {
+  .hero-card {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-note {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .hero-section {
+    padding-top: 4.5rem;
+    padding-bottom: 3rem;
+  }
+
   .section-header h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
   }
 }
 
 @media (max-width: 576px) {
+  .hero-section {
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.88);
+    backdrop-filter: blur(18px);
+  }
+
+  .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .hero-buttons .btn {
     width: 100%;
   }
+
   .back-to-top,
   .whatsapp-btn {
-    right: 1rem;
+    right: 0.75rem;
+    transform: translateZ(0);
   }
+}
+
+.github-calendar {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.github-calendar svg {
+  width: 100%;
+}
+
+.calendar-wrapper {
+  background: #111827;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.github-calendar text {
+  fill: white !important;
+}
+
+.github-calendar .ContributionCalendar-day {
+  rx: 3;
+  ry: 3;
 }
