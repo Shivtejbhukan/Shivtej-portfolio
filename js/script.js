@@ -26,10 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
   let isDeleting = false;
 
   const emailJsConfig = {
-    serviceId: 'YOUR_EMAILJS_SERVICE_ID',
-    templateId: 'YOUR_EMAILJS_TEMPLATE_ID',
-    publicKey: 'YOUR_EMAILJS_PUBLIC_KEY',
-    fallbackEmail: 'shivtejbhukan955@gmail.com'
+    serviceId: 'service_czt3qza',
+    templateId: 'template_6m22tq5',
+    publicKey: 'h_Dhqc9vZQWDPifGs'
   };
 
   function setTheme(theme) {
@@ -217,30 +216,20 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    if (emailJsConfig.serviceId.includes('YOUR_') || emailJsConfig.templateId.includes('YOUR_') || emailJsConfig.publicKey.includes('YOUR_')) {
-      const mailto = `mailto:${encodeURIComponent(emailJsConfig.fallbackEmail)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`)}`;
-      showToast('EmailJS is not configured. Opening your mail app to send the message instead.', 'warning');
-      window.location.href = mailto;
+    const formElement = document.querySelector('#contactForm');
+
+    if (!formElement) {
+      showToast('Contact form not found. Please refresh the page.', 'danger');
       return;
     }
 
-    const templateParams = {
-      from_name: name,
-      from_email: email,
-      subject: subject,
-      message: message,
-      to_email: emailJsConfig.fallbackEmail
-    };
-
-    emailjs.send(emailJsConfig.serviceId, emailJsConfig.templateId, templateParams)
+    emailjs.sendForm(emailJsConfig.serviceId, emailJsConfig.templateId, formElement)
       .then(() => {
-        showToast('Message sent successfully. Thank you!', 'success');
+        showToast("Message sent successfully! I'll contact you soon.", 'success');
         contactForm.reset();
       })
       .catch(() => {
-        showToast('Email failed. Opening your mail app instead.', 'danger');
-        const mailto = `mailto:${encodeURIComponent(emailJsConfig.fallbackEmail)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`)}`;
-        window.location.href = mailto;
+        showToast('Failed to send message. Please try again.', 'danger');
       });
   }
 
