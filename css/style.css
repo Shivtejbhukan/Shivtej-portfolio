@@ -396,7 +396,7 @@ h1 {
   font-size: 0.78rem;
   border-radius: 999px;
   background: rgba(91, 141, 239, 0.12);
-  color: var(--text);
+  color: black;
 }
 
 .cert-card {
