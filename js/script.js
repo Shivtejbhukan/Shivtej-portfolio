@@ -161,18 +161,56 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  function updateVisitorCount() {
-    const visitorTotalElement = document.querySelector('#visitorTotal');
-    const visitorTodayElement = document.querySelector('#visitorToday');
+  // function updateVisitorCount() {
+  //   const visitorTotalElement = document.querySelector('#visitorTotal');
+  //   const visitorTodayElement = document.querySelector('#visitorToday');
 
-    if (visitorTotalElement) {
-      visitorTotalElement.textContent = '100';
+  //   if (visitorTotalElement) {
+  //     visitorTotalElement.textContent = '100';
+  //   }
+
+  //   if (visitorTodayElement) {
+  //     visitorTodayElement.textContent = '10';
+  //   }
+  // }
+
+
+ async function updateVisitorCount() {
+
+    const visitorTotalElement = document.getElementById("visitorTotal");
+    const visitorTodayElement = document.getElementById("visitorToday");
+
+    try {
+
+        // Total Visitors
+        const totalResponse = await fetch(
+            "https://api.countapi.xyz/hit/shivtej-portfolio/total"
+        );
+
+        const totalData = await totalResponse.json();
+
+        if (visitorTotalElement) {
+            visitorTotalElement.textContent = totalData.value;
+        }
+
+        // Today's Visitors
+        const today = new Date().toISOString().split("T")[0];
+
+        const todayResponse = await fetch(
+            `https://api.countapi.xyz/hit/shivtej-portfolio/${today}`
+        );
+
+        const todayData = await todayResponse.json();
+
+        if (visitorTodayElement) {
+            visitorTodayElement.textContent = todayData.value;
+        }
+
+    } catch (error) {
+        console.log("Visitor Counter Error:", error);
     }
 
-    if (visitorTodayElement) {
-      visitorTodayElement.textContent = '10';
-    }
-  }
+}
 
   function initEmailJS() {
     if (window.emailjs) {
