@@ -1,3 +1,26 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+
+import {
+  getFirestore,
+  doc,
+  getDoc,
+  setDoc,
+  updateDoc,
+  increment
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCVuEIhYSUFE7QFUJi5JC3ZEpMASrr-Wag",
+  authDomain: "shivtej-portfolio-8703a.firebaseapp.com",
+  projectId: "shivtej-portfolio-8703a",
+  storageBucket: "shivtej-portfolio-8703a.firebasestorage.app",
+  messagingSenderId: "163854974207",
+  appId: "1:163854974207:web:551bde3348a3388a4ae0ca"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
 document.addEventListener('DOMContentLoaded', function () {
   const themeToggle = document.querySelector('#themeToggle');
   const htmlRoot = document.documentElement;
@@ -174,44 +197,71 @@ document.addEventListener('DOMContentLoaded', function () {
   //   }
   // }
 
-
- async function updateVisitorCount() {
+async function updateVisitorCount() {
 
     const visitorTotalElement = document.getElementById("visitorTotal");
     const visitorTodayElement = document.getElementById("visitorToday");
 
+    const alreadyVisited = localStorage.getItem("portfolioVisitor");
+
     try {
 
-        // Total Visitors
-        const totalResponse = await fetch(
-            "https://api.countapi.xyz/hit/shivtej-portfolio/total"
-        );
+        const ref = doc(db, "visitors", "counter");
+        const snapshot = await getDoc(ref);
 
-        const totalData = await totalResponse.json();
+        if (!snapshot.exists()) {
 
-        if (visitorTotalElement) {
-            visitorTotalElement.textContent = totalData.value;
-        }
+    const todayDate = new Date().toISOString().split("T")[0];
 
-        // Today's Visitors
-        const today = new Date().toISOString().split("T")[0];
+    await setDoc(ref, {
+        total: 1,
+        today: 1,
+        lastDate: todayDate
+    });
 
-        const todayResponse = await fetch(
-            `https://api.countapi.xyz/hit/shivtej-portfolio/${today}`
-        );
+    localStorage.setItem("portfolioVisitor", "true");
 
-        const todayData = await todayResponse.json();
+    visitorTotalElement.textContent = 1;
+    visitorTodayElement.textContent = 1;
 
-        if (visitorTodayElement) {
-            visitorTodayElement.textContent = todayData.value;
-        }
-
-    } catch (error) {
-        console.log("Visitor Counter Error:", error);
-    }
-
+    return;
 }
 
+        let data = snapshot.data();
+
+        let total = data.total || 0;
+        let today = data.today || 0;
+        let lastDate = data.lastDate || "";
+
+        const todayDate = new Date().toISOString().split("T")[0];
+
+        if (!alreadyVisited) {
+
+            total++;
+
+            if (lastDate === todayDate) {
+                today++;
+            } else {
+                today = 1;
+                lastDate = todayDate;
+            }
+
+            await updateDoc(ref, {
+                total: total,
+                today: today,
+                lastDate: lastDate
+            });
+
+            localStorage.setItem("portfolioVisitor", "true");
+        }
+
+        visitorTotalElement.textContent = total;
+        visitorTodayElement.textContent = today;
+
+    } catch (error) {
+        console.error(error);
+    }
+}
   function initEmailJS() {
     if (window.emailjs) {
       emailjs.init(emailJsConfig.publicKey);
