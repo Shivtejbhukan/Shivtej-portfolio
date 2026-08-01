@@ -682,7 +682,7 @@ h1 {
 
   .back-to-top,
   .whatsapp-btn {
-    right: 0.75rem;
+    right: 1rem;
     transform: translateZ(0);
   }
 }
